@@ -12,12 +12,13 @@
 #contact_header .mail i{ color:#636363; font-size:14px; line-height:14px; }
 #contact_header .connect{ color:#3399cc; font-size:14px; line-height:21px; }
 
-#header_block .light { background:#3399CC;  }
-#header_block .light:hover { background:#39A9E1; }
-
-#header_block .links-account { background: white; box-shadow:7px 7px 20px #E8E8E8; border: 1px solid #D5D5D5; border-radius:3px; width:160px; position:absolute; margin-top:2px; }
-#header_block .links-account li{ margin: 10px 0 10px 0; }
-#header_block .links-account li:hover{ background: #F1F1F1; }
-#header_block .input-search .row { height:40px; }
-#header_block .input-search input{ border:none; align-items: left; outline:none; }
-#header_block .input-search button{ border:none; background:white; outline:none; cursor:pointer; color:#8B8B8B; font-size:19px; line-height:19px; }
+#header_block #links #account { background:#54BEE5; cursor:pointer; transition: background 0.1s ease; }
+#header_block #links #account:hover { background:#5CD0FC;  }
+#header_block #links #golden_book { background:#FFDF33; cursor:pointer; transition: background 0.1s ease; }
+#header_block #links #golden_book:hover { background:#FBE46A; cursor:pointer; }
+#header_block #links #shopping_basket { background:#A1C540; cursor:pointer; transition: background 0.1s ease; }
+#header_block #links #shopping_basket:hover { background:#BBE54B; cursor:pointer; }
+.link-list-account { border:1px solid #AEAEAE; border-radius:5px; width:160px; box-shadow: 1px 1px 20px #D6D6D6; margin-top:45px; z-index:1000; }
+.link-list-account li{ margin:10px 0; transition:background 0.1s ease; }
+.link-list-account li:hover{ background:#F1F1F1; }
+.link-list-account li a { color: #54BEE5; }

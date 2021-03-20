@@ -1,7 +1,7 @@
 // Gestion Affichage du menu dropwdown 
     // Toggle au clic sur le boutton 
-    $('.button.light').click(function(e){
-        var links = $('.links-account');
+    $('#account').click(function(e){
+        var links = $('.link-list-account');
         if(links.hasClass('d-none')){
             links.removeClass('d-none');
         } else {
@@ -12,7 +12,7 @@
 
     // Fermeture simple au clic hor
     $(window).click(function(){
-        var links = $('.links-account');
+        var links = $('.link-list-account');
         if(!links.hasClass('d-none')){
             links.addClass('d-none');
         } 
