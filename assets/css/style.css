@@ -1,12 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
 #contact_header { background:#F1F1F1; }
 #contact_header a{ text-decoration:none; color:#3399cc !important; }
+#contact_header .tel { color:#636363; font-size:11px; line-height:21px; }
+#contact_header .tel i{ line-height:14px; }
+#contact_header .tel .fa-phone{ color:#636363; font-size:14px; }
+#contact_header .tel .num{ color:#636363; font-size:14px; line-height:21px; font-weight:bold; }
+#contact_header .mail{ color:#3399cc; font-size:14px; line-height:21px; }
+#contact_header .mail i{ color:#636363; font-size:14px; line-height:14px; }
+#contact_header .connect{ color:#3399cc; font-size:14px; line-height:21px; }
 
-    #contact_header .tel { color:#636363; font-size:11px; line-height:21px; }
-    #contact_header .tel i{ line-height:14px; }
-    #contact_header .tel .fa-phone{ color:#636363; font-size:14px; }
-    #contact_header .tel .num{ color:#636363; font-size:14px; line-height:21px; font-weight:bold; }
+#header_block .light { background:#3399CC;  }
+#header_block .light:hover { background:#39A9E1; }
 
-    #contact_header .mail{ color:#3399cc; font-size:14px; line-height:21px; }
-    #contact_header .mail i{ color:#636363; font-size:14px; line-height:14px; }
-
-    #contact_header .connect{ color:#3399cc; font-size:14px; line-height:21px; }
+#header_block .links-account { background: white; box-shadow:7px 7px 20px #E8E8E8; border: 1px solid #D5D5D5; border-radius:3px; width:160px; position:absolute; margin-top:2px; }
+#header_block .links-account li{ margin: 10px 0 10px 0; }
+#header_block .links-account li:hover{ background: #F1F1F1; }
+#header_block .input-search .row { height:40px; }
+#header_block .input-search input{ border:none; align-items: left; outline:none; }
+#header_block .input-search button{ border:none; background:white; outline:none; cursor:pointer; color:#8B8B8B; font-size:19px; line-height:19px; }
