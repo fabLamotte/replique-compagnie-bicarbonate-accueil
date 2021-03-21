@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Document</title>
 </head>
-<body class="container-fluid m-0 p-0">
-    <header class="row no-gutters align-items-center">
+<body>
+    <header class="container-fluid row no-gutters align-items-center text-center" style="padding:0 !important; margin: 0! important;">
         <!-- Encart contact -->
-            <div class="col-12 d-sm-none d-md-block" id="contact_header">
+            <div class="col-12 d-sm-none d-none d-md-block" id="contact_header">
                 <div class="container p-1">
                     <div class="row">
                         <div class="col-4 tel text-left p-0">
@@ -25,7 +25,7 @@
                             <i class="fa fa-envelope-o" aria-hidden="true"></i> 
                             <a href="https://www.compagnie-bicarbonate.com/contacts">contact@compagnie-bicarbonate.com</a>
                         </div>
-                        <div class="col-4 connect font-italic text-right p-0">
+                        <div class="col-4 connect font-italic text-center p-0">
                             <a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Bienvenue sur le site de la compagnie du bicarbonate</a>
                         </div>
                     </div>
@@ -34,31 +34,112 @@
 
         <!-- Zone Branding -->
             <div class="col-12 no-gutters" id="header_block">
-                <div class="container">
-                    <div class="row no-gutters m-2" style="direction:rtl;">
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-inline-block" id="links">
-                            <div class="row" style="direction:ltr;">
-                                <div class="col-4 text-white text-center p-2" id="account">
-                                    <i class="fa fa-user" aria-hidden="true"></i> COMPTE
+                <div class="container-fluid" style="margin:0 !important; padding:0 !important;">
+                    <div class="row no-gutters align-items-center m-2" style="margin:0 !important; padding:0 !important;">
+                        <div class="offset-xl-2 offset-lg-1 offset-md-1 col-xl-8 col-lg-10 col-md-10">
+                            <div class="row no-gutters align-items-center" style="direction:rtl;"><!-- Liens -->
+                                <!-- Liens Menu md => xl -->
+                                <div class="mt-3 d-none d-md-block col-xl-4 col-lg-5 col-md-9 col-sm-12 col-xs-12 row">
+                                    <div class="col-12 d-inline-block d-flex justify-content-center row links p-0 m-0" style="direction:ltr;">
+                                        <div class="offset-xl-0 offset-lg-0 offset-md-2 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 account">
+                                            <i class="fa fa-user" aria-hidden="true"></i> COMPTE
+                                            <ul class="position-absolute link-list-account list-unstyled text-center d-none">
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon compte</a></li>
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Cadeau</a></li>
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon panier</a></li>
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Commander</a></li>
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">S'enregistrer</a></li>
+                                                <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Connexion</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 golden_book"><i class="fa fa-book" aria-hidden="true"></i> LIVRE D'OR</div>
+                                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER</div>
+                                    </div>
                                 </div>
-                                <ul class="position-absolute link-list-account list-unstyled text-center">
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon compte</a></li>
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Cadeau</a></li>
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon panier</a></li>
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Commander</a></li>
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">S'enregistrer</a></li>
-                                    <li><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Connexion</a></li>
-                                </ul>
-                                <div class="col-4 text-white text-center p-2" id="golden_book"><i class="fa fa-book" aria-hidden="true"></i> LIVRE D'OR</div>
-                                <div class="col-4 text-white text-center p-2" id="shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER</div>
+    
+                                <!-- Lien Menu xs => sm -->
+                                <div class="d-block d-md-none col-12" style="direction:ltr;">
+                                    <div class="row no-gutters links p-0 m-0">
+                                        <div class="col-12 account little text-center p-2 text-white">
+                                            <i class="fa fa-user" aria-hidden="true"></i> COMPTE
+                                        </div>
+                                        <div class="col-12 bg bg-white">
+                                            <ul class="list-unstyled text-center border list-links-account-little d-none p-0 m-0">
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon compte</a></li>
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Cadeau</a></li>
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Mon panier</a></li>
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Commander</a></li>
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">S'enregistrer</a></li>
+                                                <li class="mt-4 mb-4"><a href="https://www.compagnie-bicarbonate.com/customer/account/login/referer/aHR0cHM6Ly93d3cuY29tcGFnbmllLWJpY2FyYm9uYXRlLmNvbS9jdXN0b21lci9hY2NvdW50L2luZGV4Lw%2C%2C/">Connexion</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 golden_book text-center text-white p-2">
+                                            <i class="fa fa-book" aria-hidden="true"></i> LIVRE D'OR
+                                        </div>
+                                        <div class="col-12 shopping_basket text-center text-white p-2">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER
+                                        </div>
+                                    </div>
+                                    <!-- panier -->
+                                    <div></div>
+                                </div>
+                            <!-- Image -->
+                                <div class="mt-3 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-inline-block order-xl-1 order-lg-1 order-md-0 order-sm-0">
+                                    <div class="row text-center no-gutters">
+                                        <div class="col-12">
+                                            <img src="../assets/images/brand.png" alt="Compagnie du bicarbonate" title="Compagnie du bicarbonate" class="img-compagnie img-fluid" />
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Champs de recherche -->
+                                <div class="mt-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 d-inline-block order-xl-0 order-lg-0 order-md-1 order-sm-1 d-flex justify-content-center" style="direction:ltr;">
+                                    <div class="row input-search text-left align-items-center m-0 p-0">
+                                        <input type="text" class="col-10" placeholder="Trouver un produit..." />
+                                        <i class="fa fa-search col-2" aria-hidden="true"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-xs-12 d-inline-block order-xl-1 order-lg-1 order-md-0 order-sm-0">qsd</div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 d-inline-block order-xl-0 order-lg-0 order-md-1 order-sm-1">Champ de recherche</div>
                     </div>
                 </div>
             </div>
     </header>
+    <nav class="container-fluid mt-3">
+        <!-- Menu -->
+        <div class="row no-gutters align-items-center">
+            <div class="offset-xl-2 col-xl-8 d-flex justify-content-center text-white">
+                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-birthday-cake" aria-hidden="true"></i>
+                    <div class="col-9">Cuisine & Gastronomie</div>
+                </div>
+                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-bath" aria-hidden="true"></i>
+                    <div class="col-9">Entretien linge & maison</div>
+                </div>
+                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-tint" aria-hidden="true"></i>
+                    <div class="col-9">Jardin, animaux & bricolage</div>
+                </div>
+                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-heartbeat" aria-hidden="true"></i>
+                    <div class="col-9">Bien-être & soins</div>
+                </div>
+                <div class="menu-item red d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-gift" aria-hidden="true"></i>
+                    <div class="col-9">Bonnes affaires</div>
+                </div>
+                <div class="menu-item bold d-flex justify-content-between align-items-center p-2 row">
+                    <i class="text-right col-3 fa fa-info" aria-hidden="true"></i>
+                    <div class="col-9">Découvrez le bicarbonate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div>
+
+        </div>
+    </nav>
 
 
 
@@ -77,6 +158,6 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/owl-carousel/dist/owl.carousel.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script_design.js"></script>
 </body>
 </html>
