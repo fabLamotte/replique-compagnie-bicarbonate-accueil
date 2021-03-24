@@ -125,7 +125,8 @@ footer .contact .contact-bloc .adresse .orange-font { color:#f15a08; text-transf
 footer .contact .contact-bloc .adresse .adresse-complete { font-size:15px; }
 footer .contact .contact-bloc .adresse .phone { font-size:18px; font-weight:700; line-height:13px; }
 footer .contact .contact-bloc .adresse .phone .surtaxe{ font-size:11px; font-weight:400; font-style:italic; }
-footer .contact .contact-form { background: #219AC8; padding:10px 15px; color:white; font-style:italic; margin-top:15px; }
+footer .contact .contact-form { background: #219AC8; padding:10px 15px; color:white; font-style:italic; margin-top:15px; transition: background 0.1s ease; }
+footer .contact .contact-form:hover { background: #1B72AA; }
 
 footer .paiement { margin-top: 50px; height:50px; position:relative; }
 footer .paiement .paiement-title{ border-top: 1px solid #C4C4C4; }
