@@ -65,5 +65,29 @@ $(document).ready(function(){
     if($(window).width() <= 770) {
         $('.bloc-infos').children().removeClass('container');
         $('.bloc-infos').children().addClass('container-fluid');
+        $('.family').children().removeClass('container');
+        $('.family').children().addClass('container-fluid');
+        $('.bien-faits').children().removeClass('container');
+        $('.bien-faits').children().addClass('container-fluid');
+        $('footer').children().removeClass('container');
+        $('footer').children().addClass('container-fluid');
+        $('.conseils').children().removeClass('container');
+        $('.conseils').children().addClass('container-fluid');
+        $('.blog').children().removeClass('container');
+        $('.blog').children().addClass('container-fluid');
     }
+
+    $('.bien-faits .bloc-image .cadre-container').hover(function(){
+        $(this).find('.cadre-content').css({'top': '10%'});
+    });
+    $('.bien-faits .bloc-image .cadre-container').mouseleave(function(){
+        $(this).find('.cadre-content').css({'top': '67%'});
+    });
+
+    $('.reassurance .reassurance-bloc').hover(function(){
+        $(this).find('.image-circled').css({'background':'#89B610'});
+    });
+    $('.reassurance .reassurance-bloc').mouseleave(function(){
+        $(this).find('.image-circled').css({'background':'#18769A'});
+    });
 });

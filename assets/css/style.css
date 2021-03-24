@@ -60,8 +60,77 @@ nav .menu-item div{ font-size:14px; }
 .bloc-infos .sous-bloc .row .inside .title{ color: #F15A08; font-weight:bold; font-size:17px; }
 .bloc-infos .sous-bloc .row .inside .subtitle{ color: #45AEE0; font-weight:bold; font-size:15px; font-style: italic; line-height:12px; }
 .bloc-infos .sous-bloc .row .inside .content{ color:#919191; line-height:17px; }
-.bloc-infos .sous-bloc .row .inside a{ background:#45AEE0; margin-bottom:250px; padding:7px 15px 7px 15px; color:white; font-style: italic; cursor:pointer; bottom:10px; transition: background 0.1s ease; }
-.bloc-infos .sous-bloc .row .inside a:hover{ background:#0A6794; }
+.bloc-infos .sous-bloc .row .inside .button-know{ background:#45AEE0; margin-bottom:250px; padding:7px 15px 7px 15px; color:white; font-style: italic; cursor:pointer; bottom:10px; transition: background 0.1s ease; }
+.bloc-infos .sous-bloc .row .inside .button-know:hover{ background:#0A6794; }
+
+.family { background: #EAEAEA; height:100%; padding:30px; }
+.family .subtitle{ color: #89b610; font-size:30px; font-weight:700; border-top: 1px solid #29aee0; line-height:0; margin:60px 0 30px; width:100%; padding: 0 20px; }
+.family .subtitle .title{ background-color: #EAEAEA; padding:0 20px; }
+.family .subtitle .accroche{ color: #636363; font-size:14px; font-weight:lighter; font-style:italic; display:block; margin-top:15px; line-height:15px; }
+.family p { font-style:italic; color: #6D6D6D; font-size: 14px; }
+.family a { color:white; }
+.family .img-family { max-height:initial; width: auto; top:-150px; position:absolute; }
+
+.button-know{ border:none; outline:none; background:#45AEE0; margin-bottom:250px; padding:7px 15px 7px 15px; color:white; font-style: italic; cursor:pointer; bottom:10px; transition: background 0.1s ease; }
+.button-know:hover{ background:#0A6794; }
+
+.bien-faits .title .subtitle{ color: #89b610; font-size:30px; font-weight:700; border-top: 1px solid #29aee0; line-height:0; margin:60px 0 30px; width:100%; padding: 0 20px; }
+.bien-faits .title .subtitle .title{ background-color: white; padding:0 20px; font-size:30px; }
+.bien-faits .title .subtitle .accroche{ color: #636363; font-size:14px; font-weight:lighter; font-style:italic; display:block; margin-top:15px; line-height:15px; }
+.bien-faits .bloc-image .cadre-container { padding:20px; height:200px; width:300px; cursor:pointer; color:white;  overflow:hidden; }
+.bien-faits .bloc-image .cadre-container img { height:200px; width:280px; margin:0; }
+.bien-faits .bloc-image .cadre-container .cadre-content{ background: rgba(12,88,117,.8); height:200px; bottom:0; top:67%; transition:top 0.5s ease; }
+.bien-faits .bloc-image .cadre-container .cadre-content .subtitle { font-weight: 700; padding:0 15px; }
+.bien-faits .bloc-image .cadre-container .cadre-content .content { font-size:14px; padding: 0 10px; margin-top:10px; }
+
+.conseils .bloc { border:1px solid #C7C7C7; background:#F1F1F1; height:auto; padding:20px; }
+.conseils .bloc button { margin-bottom:10px; }
+.conseils .bloc .title { font-size:18px; font-weight: 700; color:#18769a; }
+.conseils .bloc p { margin:0 0 10px; font-weight: 400; color:#636363; }
+
+.blog { margin-bottom:50px; }
+.blog .subtitle { border-top: 1px solid #f15a08; line-height:0; margin:60px 0 30px;  width:100%; }
+.blog .subtitle .background-white{ background:white; height:500px; }
+.blog .subtitle .blog-button { background:#f15a08; color:white; padding:10px; font-size:18px; transition: background 0.2s ease; }
+.blog .subtitle .blog-button:hover { background:#F26A20; }
+
+.reassurance { background: #0C5875; }
+.reassurance .reassurance-bloc { cursor:pointer; }
+.reassurance .reassurance-bloc .image-circled { background:#18769A; color:white; border-radius:100%; height:36px; width:36px; font-size:19px; padding:3px; transition:background 0.1s ease; }
+.reassurance .reassurance-bloc .subtitle { color:white; font-size:16px; font-style:italic;  }
+.reassurance .reassurance-bloc .content { color:white; font-size:11px; font-style:italic; }
+
+footer { background: #18769A; }
+footer .propos, footer .newsletter{ background: #18769A; margin-top:20px; }
+
+footer .propos .title, footer .newsletter .title, footer .contact .title{ font-size: 30px; font-weight:700; margin-bottom:30px; }
+footer .propos li a{ color:white; transition: color 0.1s ease; }
+footer .propos li a:hover{ color:#B3B3B3; }
+footer .propos li .help{ color: #f15a08; font-weight:700; text-shadow: 0px 0px 10px white; transition: color 0.1s ease; }
+footer .propos li .help:hover{ color: #F26A20; }
+footer .newsletter form { color: #BFBFBF; }
+footer .newsletter form input { border:none; outline:none; font-weight:700; }
+footer .newsletter form button { border:none; outline:none; background: #0F8EC6; transition:background 0.1s ease; padding:7px 15px; margin-left:4.2px; font-weight:700; cursor:pointer; color:white; }
+footer .newsletter form button:hover { background: #0B6B95; }
+footer .newsletter .links { margin: 20px 0 0 30px; }
+footer .newsletter .links i{ border:none; background: white; cursor:pointer; color: #0F8EC6; transition:color 0.1s ease; border-radius:100%; font-size:25px; height:50px; width:50px; text-align:center; padding-top:12px; }
+footer .newsletter .links i:hover { color: #0B6B95; }
+
+footer .contact { background:#0C5875; }
+footer .contact .title { margin-top:20px; }
+footer .contact .contact-bloc { color:white; }
+footer .contact .contact-bloc .nom{ text-transform:uppercase; }
+footer .contact .contact-bloc .adresse{ margin-top:10px; }
+footer .contact .contact-bloc .adresse .orange-font { color:#f15a08; text-transform:uppercase; text-shadow: 0 0 10px white; font-weight:700; }
+footer .contact .contact-bloc .adresse .adresse-complete { font-size:15px; }
+footer .contact .contact-bloc .adresse .phone { font-size:18px; font-weight:700; line-height:13px; }
+footer .contact .contact-bloc .adresse .phone .surtaxe{ font-size:11px; font-weight:400; font-style:italic; }
+footer .contact .contact-form { background: #219AC8; padding:10px 15px; color:white; font-style:italic; margin-top:15px; }
+
+footer .paiement { margin-top: 50px; height:50px; position:relative; }
+footer .paiement .paiement-title{ border-top: 1px solid #C4C4C4; }
+footer .paiement .paiement-subtitle{ background: #18769A; padding:20px 40px 20px 50px; margin: -32px auto; width:255px; line-height:0; position:absolute; }
+footer .paiement i{ color: #0c5875; font-size:22px; }
 
 @media screen and (min-width: 1400px){
   .input-search{ width:80%; }
@@ -71,6 +140,11 @@ nav .menu-item div{ font-size:14px; }
   .input-search{ width:80%; }
   #links div {  font-size:15px;  }
   .bloc-infos .sous-bloc .row img{ max-width:100px; max-height:100px; }
+  .family .img-family { max-height:initial; width: auto; top:-100px; position:absolute; height: 300px; }
+  .map iframe{ height:280px; width:190px; }
+}
+@media screen and (max-width: 1000px){
+  .map iframe{ height:200px; width:300px; margin: 20px 0; }
 }
 @media screen and (max-width: 990px) {
   .input-search{ width:90%; }
@@ -81,6 +155,11 @@ nav .menu-item div{ font-size:14px; }
   .bloc-infos .sous-bloc .row { min-height:150px; margin:5px; }
   .bloc-infos .sous-bloc .row img{ max-width:170px; max-height:170px; }
   .bloc-infos { width:100% !important; }
+  .bien-faits .title .subtitle .title{ font-size:20px; }
+  .family .subtitle{ font-size:20px; }
+  .reassurance .reassurance-bloc { margin-left:50px; }
+  .map iframe{ height:200px; width:100%; margin: 20px 0; }
+  footer .contact{ margin-top:30px; }
 }
 @media screen and (max-width: 580px){
   .bloc-infos .sous-bloc .row { min-height:340px; }
