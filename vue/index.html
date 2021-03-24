@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/fonts.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/carousel.css" />
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +40,7 @@
                         <div class="offset-xl-2 offset-lg-1 offset-md-1 col-xl-8 col-lg-10 col-md-10">
                             <div class="row no-gutters align-items-center" style="direction:rtl;"><!-- Liens -->
                                 <!-- Liens Menu md => xl -->
-                                <div class="mt-3 d-none d-md-block col-xl-4 col-lg-5 col-md-9 col-sm-12 col-xs-12 row">
+                                <div class="mt-3 d-none d-md-block col-xl-5 col-lg-5 col-md-9 col-sm-12 col-xs-12 row">
                                     <div class="col-12 d-inline-block d-flex justify-content-center row links p-0 m-0" style="direction:ltr;">
                                         <div class="offset-xl-0 offset-lg-0 offset-md-2 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 account">
                                             <i class="fa fa-user" aria-hidden="true"></i> COMPTE
@@ -55,12 +56,17 @@
                                         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 golden_book"><i class="fa fa-book" aria-hidden="true"></i> LIVRE D'OR</div>
                                         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER</div>
                                     </div>
+                                    <!-- panier -->
+                                    <div class="d-none col-12 position-absolute bg bg-white text-dark" style="direction:ltr; z-index:1000;" id="panier">
+                                        <p class="text-uppercase subtitle m-4">Derniers articles ajoutés</p>
+                                        <span>Votre panier est vide.</span>
+                                    </div>
                                 </div>
     
                                 <!-- Lien Menu xs => sm -->
                                 <div class="d-block d-md-none col-12" style="direction:ltr;">
                                     <div class="row no-gutters links p-0 m-0">
-                                        <div class="col-12 account little text-center p-2 text-white">
+                                        <div class="col-12 little text-center p-2 text-white account">
                                             <i class="fa fa-user" aria-hidden="true"></i> COMPTE
                                         </div>
                                         <div class="col-12 bg bg-white">
@@ -80,11 +86,10 @@
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER
                                         </div>
                                     </div>
-                                    <!-- panier -->
-                                    <div></div>
                                 </div>
+                                
                             <!-- Image -->
-                                <div class="mt-3 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-inline-block order-xl-1 order-lg-1 order-md-0 order-sm-0">
+                                <div class="mt-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-inline-block order-xl-1 order-lg-1 order-md-0 order-sm-0">
                                     <div class="row text-center no-gutters">
                                         <div class="col-12">
                                             <img src="../assets/images/brand.png" alt="Compagnie du bicarbonate" title="Compagnie du bicarbonate" class="img-compagnie img-fluid" />
@@ -104,42 +109,253 @@
                 </div>
             </div>
     </header>
-    <nav class="container-fluid mt-3">
+    <nav class="container-fluid mt-3 p-0">
         <!-- Menu -->
-        <div class="row no-gutters align-items-center">
-            <div class="offset-xl-2 col-xl-8 d-flex justify-content-center text-white">
-                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+        <div class="row no-gutters align-items-center d-none d-md-block">
+            <div class="offset-xl-2 offset-lg-1 offset-md-0 col-xl-8 col-lg-10 col-md-12 d-flex justify-content-center text-white ">
+                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row food-gastro">
                     <i class="text-right col-3 fa fa-birthday-cake" aria-hidden="true"></i>
                     <div class="col-9">Cuisine & Gastronomie</div>
                 </div>
-                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                <div class="menu-item light d-flex justify-content-between align-items-center pt-2 pb-2 row">
                     <i class="text-right col-3 fa fa-bath" aria-hidden="true"></i>
                     <div class="col-9">Entretien linge & maison</div>
                 </div>
-                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                <div class="menu-item light d-flex justify-content-between align-items-center pt-2 pb-2 row">
                     <i class="text-right col-3 fa fa-tint" aria-hidden="true"></i>
                     <div class="col-9">Jardin, animaux & bricolage</div>
                 </div>
-                <div class="menu-item light d-flex justify-content-between align-items-center p-2 row">
+                <div class="menu-item light d-flex justify-content-between align-items-center pt-2 pb-2 row">
                     <i class="text-right col-3 fa fa-heartbeat" aria-hidden="true"></i>
                     <div class="col-9">Bien-être & soins</div>
                 </div>
-                <div class="menu-item red d-flex justify-content-between align-items-center p-2 row">
+                <div class="menu-item red d-flex justify-content-between align-items-center pt-2 pb-2 row">
                     <i class="text-right col-3 fa fa-gift" aria-hidden="true"></i>
                     <div class="col-9">Bonnes affaires</div>
                 </div>
-                <div class="menu-item bold d-flex justify-content-between align-items-center p-2 row">
+                <div class="menu-item bold d-flex justify-content-between align-items-center pt-2 pb-2 row">
                     <i class="text-right col-3 fa fa-info" aria-hidden="true"></i>
                     <div class="col-9">Découvrez le bicarbonate</div>
                 </div>
             </div>
         </div>
+        <!-- Menu List -->
+        <div class="row no-gutters d-none justify-content-center row-menu">
+            <div class="col-xl-8 col-lg-12 d-none d-md-block position-absolute bloc-menu">
+                <div class="row no-gutters d-flex justify-content-between">
+                    <div class="list-menu col-2 p-2 first">
+                        <div class="menu-subtitle border-bottom border-primary font-weight-bold mb-2 pb-2 mr-3 ml-3"><a target="_blank" href="https://www.compagnie-bicarbonate.com/cuisine-gastronomie-bicarbonate-de-soude.html">TYPE PRODUIT</a></div>
+                        <ul class="list list-unstyled mr-3 ml-3 ">
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Bicarbonate
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Sel & Nigari
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Vinaigres
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Mini-guide du bicarbonate
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-menu col-2 p-2">
+                        <div class="menu-subtitle border-bottom border-primary font-weight-bold mb-2 pb-2"><a href="">PAR USAGE</a></div>
+                        <ul class="list list-unstyled">
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Faire la cuisine
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Nettoyer la cuisine
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Vaisselle
+                                </a>
+                            </li>
+                            <li class="items row" style="height:50px;">
+                                <a href="" class="col-12" style="height:50px;">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Compléments alimentaire & Arômes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-menu col-2 p-2">
+                        <div class="menu-subtitle border-bottom border-primary font-weight-bold mb-2 pb-2"><a href="">RECHARGES ET PACKS</a></div>
+                        <ul class="list list-unstyled">
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Recharges bicarbonate
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Sacs 25kg
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Pack collection
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Pack trio
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Pack Méga
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-menu col-2 p-2">
+                        <div class="menu-subtitle border-bottom border-primary font-weight-bold mb-2 pb-2"><a href="">ACCESSOIRES</a></div>
+                        <ul class="list list-unstyled">
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Livres
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Petits accessoires et Tee-shirts
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Flacons, bocaux & sprays
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Brosse
+                                </a>
+                            </li>
+                            <li class="items row">
+                                <a href="" class="col-12">
+                                    <i class="fa fa-check" aria-hidden="true"></i> Eponge
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-menu col-2 p-2 bg-menu d-flex justify-content-center align-items-center">
+                        <img src="../assets/images/cuisine&gastronomie.jpg" class="img-fluid border" alt="cuisine & gastronomie" title="cuisine & gastronomie" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Carousel -->
-        <div>
-
+        <div class="owl-carousel owl-theme row d-none d-md-block">
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/recharge-3-kg.html"><img src="../assets/images/carousel/sacs-recharges.jpg" class="img fluid" /></a></div>
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/codes-promo-reductions"><img src="../assets/images/carousel/offres.jpg" class="img fluid" /></a></div>
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/codes-promo-reductions"><img src="../assets/images/carousel/offre-achat.jpg" class="img fluid" /></a></div>
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/a-propos"><img src="../assets/images/carousel/label-pets-friendly.jpg" class="img fluid" /></a></div>
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/tarifs-et-livraisons"><img src="../assets/images/carousel/livraison.jpg" class="img fluid" /></a></div>
+            <div class="item" ><a href="https://www.compagnie-bicarbonate.com/a-propos"><img src="../assets/images/carousel/compagnie-bicarbonate.jpg" class="img fluid" /></a></div>
         </div>
     </nav>
+    <div class="bloc-infos">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 col-xs-12 text-center"><img src="../assets/images/sous-bloc/flacons.jpg" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 col-xs-12 inside">
+                            <div class="title">Le bicarbonate</div>
+                            <div class="subtitle">Vous ne savez pas ce qu'est le bicarbonate ?</div>
+                            <p class="content">Découvrez ce produit exceptionnel</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/comment-utiliser-le-bicarbonate-de-soude" class="button-know mt-3"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 col-xs-12 text-center"><img src="../assets/images/sous-bloc/graines.jpg" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 col-xs-12 inside">
+                            <div class="title">Professionnels</div>
+                            <div class="subtitle">(magasin, entreprise, CE, collectivité, association)</div>
+                            <p class="content">Contactez-nous pour découvrir nos avantages pros.</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/professionnels" class="button-know"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 col-xs-12 text-center"><img src="../assets/images/sous-bloc/recharges.jpg" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 col-xs-12 inside">
+                            <div class="title">Recharges & flacons</div>
+                            <div class="subtitle">Le geste écologique et économique</div>
+                            <p class="content">Rechargez vos flacons de bicarbonate.</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/gamme-compagnie-bicarbonate-soude-sodium-potassium" class="button-know"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="liste_articles">
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="bloc-infos">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 text-center"><img src="../assets/images/sous-bloc/secure1.png" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 inside">
+                            <div class="title">Sécurité</div>
+                            <div class="subtitle">Vos paiements sont totalement sécurisés</div>
+                            <p class="content">Tout a été mis en oeuvre pour sécuriser vos achats !</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/achats-securises" class="button-know mt-3"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 text-center"><img src="../assets/images/sous-bloc/carte.jpg" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 inside">
+                            <div class="title">Points de vente</div>
+                            <div class="subtitle">Nous sommes aussi près de chez vous !</div>
+                            <p class="content">Retrouvez nos produits proches de chez vous !</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/carte-partenaires" class="button-know"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 sous-bloc">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-4 text-center"><img src="../assets/images/sous-bloc/radio.jpg" class="img-fluid" /></div>
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-8 inside">
+                            <div class="title">l'Actualité</div>
+                            <div class="subtitle">Découvrez notre espace presse !</div>
+                            <p class="content">On parle de nous, alors on vous en parle !</p>
+                            <a target="_blank" href="https://www.compagnie-bicarbonate.com/espace-presse" class="button-know"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -159,5 +375,7 @@
     <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/owl-carousel/dist/owl.carousel.min.js"></script>
     <script src="../assets/js/script_design.js"></script>
+    <script src="../assets/js/menu_script.js"></script>
+    <script src="../assets/js/carousel.js"></script>
 </body>
 </html>

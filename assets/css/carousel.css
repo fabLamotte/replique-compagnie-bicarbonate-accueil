@@ -1,0 +1,37 @@
+.owl-carousel {
+    background:white;
+    margin:0;
+}
+.owl-carousel .item { 
+    width:100%;
+ }
+ .owl-carousel .item img{ 
+     width:100%;
+     line-height:1;
+  }
+.owl-carousel .owl-dots {
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+}
+.owl-carousel .owl-dots .owl-dot {
+    outline:none;
+    width:20px;
+    margin-right: 10px;
+    cursor:auto;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+    background:#297AA3;
+    padding:10px;
+}
+.owl-carousel .owl-dots .owl-dot span {
+    padding:10px;
+    cursor:pointer;
+}
+.owl-carousel .owl-dots .owl-dot span:hover {
+    background:#297AA3;
+}
+.owl-dot:hover span{
+    background:#297AA3;
+}
