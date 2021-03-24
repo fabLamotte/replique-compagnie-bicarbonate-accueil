@@ -5,5 +5,5 @@ $('.owl-carousel').owlCarousel({
     items:1,
     mouseDrag:false,
     smartSpeed: 800,
-    merge:true
+    merge:true,
 })
