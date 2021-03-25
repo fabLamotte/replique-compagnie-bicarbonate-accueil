@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var links_litle = $('.list-links-account-little'); var button_links_litle = $('.account.litle');
     var links = $('.link-list-account'); var button_links = $('.account');
-    var panier = $('#panier'); var button_panier = $('.shopping_basket');
+    var panier = $('.panier'); var button_panier = $('.shopping_basket');
     var input_search = $('.input-search input');
     
     // Au clic sur "COMPTE"
@@ -43,9 +43,6 @@ $(document).ready(function(){
 
     // Au clic n'importe où
     $(document).click(function() {
-        if(!panier.hasClass('d-none')){
-            panier.addClass('d-none');
-        }
         if(!links.hasClass('d-none')){
             links.addClass('d-none');
         }
@@ -75,6 +72,8 @@ $(document).ready(function(){
         $('.conseils').children().addClass('container-fluid');
         $('.blog').children().removeClass('container');
         $('.blog').children().addClass('container-fluid');
+        $('.liste_articles').children().removeClass('container');
+        $('.liste_articles').children().addClass('container-fluid');
     }
 
     $('.bien-faits .bloc-image .cadre-container').hover(function(){

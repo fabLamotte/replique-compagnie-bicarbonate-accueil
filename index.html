@@ -57,9 +57,8 @@
                                         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12 text-white text-center p-2 shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER</div>
                                     </div>
                                     <!-- panier -->
-                                    <div class="d-none col-12 position-absolute bg bg-white text-dark" style="direction:ltr; z-index:1000;" id="panier">
+                                    <div class="d-none col-12 position-absolute bg bg-white text-dark m-0 p-0 panier" style="direction:ltr; z-index:1000;">
                                         <p class="text-uppercase subtitle m-4">Derniers articles ajoutés</p>
-                                        <span>Votre panier est vide.</span>
                                     </div>
                                 </div>
     
@@ -85,6 +84,10 @@
                                         <div class="col-12 shopping_basket text-center text-white p-2">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> PANIER
                                         </div>
+                                    </div>
+                                    <!-- panier -->
+                                    <div class="d-none col-12 position-absolute bg bg-white text-dark m-0 p-0 panier" style="direction:ltr; z-index:1000;">
+                                        <p class="text-uppercase subtitle m-4">Derniers articles ajoutés</p>
                                     </div>
                                 </div>
                                 
@@ -310,13 +313,16 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Liste des articles -->
     <div class="liste_articles">
-        <div class="row">
-            <div class="col-12">
-
+        <div class="container">
+            <div class="row liste-target d-flex-justify-content-center">
+                <div class="en-tete col-12 mb-5">
+                    <div class="border-bottom border-primary text-center title mt-3">Les experts du bicarbonate de soude et des produits écologiques</div>
+                    <div class="text-center subtitle mt-3">La sélection Compagnie du Bicarbonate</div>
+                    <div class="text-center mt-2 subsubtitle">Découvrez nos dernières nouveautés, produits et promotions</div>
+                </div>
             </div>
         </div>
     </div>
@@ -512,7 +518,7 @@
     <div class="blog">
         <div class="container">
             <div class="row title">
-                <div class="col-12 bg bg-white m-3">
+                <div class="col-12 m-3">
                     <div class="subtitle text-center">
                         <a href="https://www.monbicarbonate.fr/" class="blog-button font-italic" target="_blank" rel="noopener">
                             Découvrez notre blog
@@ -654,7 +660,7 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/owl-carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/js/arcitles.js"></script>
+    <script src="assets/js/articles.js"></script>
     <script src="assets/js/script_design.js"></script>
     <script src="assets/js/menu_script.js"></script>
     <script src="assets/js/carousel.js"></script>

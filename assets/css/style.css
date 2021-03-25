@@ -29,8 +29,15 @@ a {text-decoration:none !important; }
 .input-search input{ outline:none; border:none; padding:5px;  }
 .input-search i{ outline:none; border:none; padding:5px 10px 5px 5px; cursor:pointer; color:#B8B8B8; font-weight:bold; text-align:end; }
 .img-compagnie:hover { opacity:0.8; }
-#panier { margin-top:3px; border: 1px solid #B3B3B3; border-radius:3px; }
-#panier .subtitle{ font-size:12px; color:#296D89; font-weight:bold; }
+
+.panier { margin-top:3px; border: 1px solid #B3B3B3; border-radius:3px; box-shadow: 2px 2px 10px black; }
+.panier .subtitle{ font-size:12px; color:#296D89; font-weight:bold; }
+.panier .product-basket { width:100px; height:100px; }
+.panier .priceBold, .panier .quantityBold{ font-weight:700; color: #6D6D6D; }
+.panier .total-panier { background: #DDDDDD; }
+.panier .command-btn{ background:#96B73D; color:white; font-style:italic; font-weight:700; margin:10px; cursor:pointer; }
+.panier .command-btn:hover{ background:#9FC142; }
+.panier .supprimer-produit { cursor:pointer; }
 
 nav { background:#29AEE0; }
 nav .menu-item { cursor:pointer; transition:background 0.1s ease; margin:0 1px 0 0; }
@@ -38,7 +45,7 @@ nav .menu-item.light { background: #3992C5;}
 nav .menu-item.red{ background: #E1571A; }
 nav .menu-item.red:hover{ background: #EE5C1C; }
 nav .menu-item.bold{ background: #296D89; }
-nav .menu-item.light:hover { background: #296D89;}
+nav .menu-item.light:hover { background: #296D89; }
 nav .menu-item i{ font-size:25px; }
 nav .menu-item div{ font-size:14px; }
 
@@ -62,6 +69,24 @@ nav .menu-item div{ font-size:14px; }
 .bloc-infos .sous-bloc .row .inside .content{ color:#919191; line-height:17px; }
 .bloc-infos .sous-bloc .row .inside .button-know{ background:#45AEE0; margin-bottom:250px; padding:7px 15px 7px 15px; color:white; font-style: italic; cursor:pointer; bottom:10px; transition: background 0.1s ease; }
 .bloc-infos .sous-bloc .row .inside .button-know:hover{ background:#0A6794; }
+
+.liste_articles { background:white; }
+.liste_articles .en-tete .title, .liste_articles .en-tete .subtitle { color: #18769A; }
+.liste_articles .en-tete .title { font-size:22px; font-weight:700; }
+.liste_articles .en-tete .subtitle { font-size:22px; font-weight:700; }
+.liste_articles .en-tete .subsubtitle { font-size:13px; font-weight:400; font-style:italic; color:#8A7973; }
+.liste_articles .bloc-produit { border: 1px solid #B9B9B9; text-align: center; height:350px; }
+.liste_articles .bloc-produit .bloc-image{ margin:10px; cursor:pointer; }
+.liste_articles .bloc-produit .bloc-image .img-produit{ width:150px; height:auto; }
+.liste_articles .bloc-produit .bloc-image .plus-details{ color:white; font-weight:700; background: rgb(31,82,102,0.9); width:100%; height:100%; top:0; display:none; }
+.liste_articles .bloc-produit .bloc-content { height:130px; }
+.liste_articles .bloc-produit .bloc-content .title { color:#10699B; padding: 0 10px; font-weight:600; cursor:pointer; }
+.liste_articles .bloc-produit .bloc-content .title:hover { color:#147CB6; }
+.liste_articles .bloc-produit .bloc-content .stars i{ color:#FFD700; margin: 5px 1px; font-size:18px; }
+.liste_articles .bloc-produit .bloc-content .goodPrice{ color:#E14906; font-weight:700; font-size:18px; }
+.liste_articles .bloc-produit .bloc-content .prices { color:#C1A9A0; font-weight:400; font-size:18px; }
+.liste_articles .bloc-produit .zone-ajout-panier .btn-panier { cursor:pointer; transition: box-shadow 0.2s ease; }
+.liste_articles .bloc-produit .zone-ajout-panier .btn-panier.added { background:#5AAF00 !important; box-shadow: inset 2px 2px 10px black; }
 
 .family { background: #EAEAEA; height:100%; padding:30px; }
 .family .subtitle{ color: #89b610; font-size:30px; font-weight:700; border-top: 1px solid #29aee0; line-height:0; margin:60px 0 30px; width:100%; padding: 0 20px; }
@@ -161,6 +186,7 @@ footer .paiement i{ color: #0c5875; font-size:22px; }
   .reassurance .reassurance-bloc { margin-left:50px; }
   .map iframe{ height:200px; width:100%; margin: 20px 0; }
   footer .contact{ margin-top:30px; }
+  .panier { position:static !important; }
 }
 @media screen and (max-width: 580px){
   .bloc-infos .sous-bloc .row { min-height:340px; }
