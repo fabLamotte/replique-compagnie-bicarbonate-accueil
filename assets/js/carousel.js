@@ -6,4 +6,5 @@ $('.owl-carousel').owlCarousel({
     mouseDrag:false,
     smartSpeed: 800,
     merge:true,
+    lazyLoad: true
 })

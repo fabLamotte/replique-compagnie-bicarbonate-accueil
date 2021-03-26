@@ -248,7 +248,7 @@ $(document).ready(function(){
 
             // Changement du boutton ajouter
                 if(!$(this).hasClass('.added')){
-                    $(this).empty().append('ajouté').addClass('added text-uppercase');
+                    $(this).empty().append('ajouté').addClass('added');
                 }
                 miseAJourQuantite();
         });
